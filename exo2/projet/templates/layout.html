@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" type="image/png"  href="sushi.png">
+      <script src="js/scripvscode-file://vscode-app/c:/Users/User/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.htmlt.js"  type="module"></script>
+    <title>
+        {% block title %}
+            Sushiman
+        {% endblock %}
+    </title>
+</head>
+<body>
+    <header>
+    <nav class="header__nav">
+      <div class="header__logo">
+        <h4 data-aos="fade-down">sushiman</h4>
+        <div class="header__logo-overlay">
+
+        </div>
+
+      </div>
+      <ul class="header__menu" data-aos="fade-down">
+        <li>
+          <a href="#menu">Menu</a>
+        </li>
+        <li>
+          <a href="#food">Food</a>
+        </li>
+        <li>
+          <a href="#services">Services</a>
+        </li>
+        <li>
+          <a href="#about-us">About Us</a>
+        </li>
+        <li>
+          <img src="{% static 'assets/search.svg' %}" alt="search">
+        </li>
+      </ul>
+      <ul class="header__menu-mobile" data-aos="fade-down">
+        <li>
+          <img src="{% static 'assets/menu.svg' %}" alt="menu">
+        </li>
+      </ul>
+    </nav>
+  </header>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

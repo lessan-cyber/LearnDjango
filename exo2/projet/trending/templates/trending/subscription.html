@@ -1,0 +1,47 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block title %}
+    Sushiman About
+{% endblock %}
+
+{% block content %}
+        <section class="subscription flex-center" id="Services">
+      <h2 data-aos="flipe-down">
+        Get offers straight <br>
+        to your inbox
+      </h2>
+      <p data-aos="fade-up">Sign up for the Sushiman newsletter</p>
+      <div class="subscription__form" data-aos="fade-up">
+        <input type="text" name="" id="" placeholder="Enter your email adresse">
+        <button> Get sarted</button>
+      </div>
+    </section>
+      <footer class="footer flex-between">
+          <h3>Sushiman</h3>
+          <ul class="footer__nav" data-aos="fade-up">
+            <li>
+              <a href="#menu">Menu</a>
+            </li>
+            <li>
+              <a href="#food">Food</a>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+            <li>
+              <a href="#about-us">about-us</a>
+            </li>
+          </ul>
+          <ul class="footer__social">
+             <li class="flex-center">
+              <img src="{% static 'assets/facebook.svg' %}" alt="facebook">
+             </li>
+             <li class="flex-center">
+              <img src="{% static 'assets/instagram.svg' %}" alt="facebook">
+             </li>
+             <li class="flex-center">
+              <img src="{% static 'assets/twitter.svg' %}" alt="facebook">
+             </li>
+          </ul>
+      </footer>
+{% endblock %}
