@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>
+        {% block  title %}
+            Django App
+        {% endblock %}
+    </title>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/about">About</a> |
+        <a href="/posts">News</a> |
+    </nav>
+    <main>
+        {%block  content %}
+        {% endblock %}
+    </main>
+     <script src="{% static 'js/main.js'%}"></script>
+</body>
+</html>
